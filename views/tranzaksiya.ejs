@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('includes/head')%>
+
+    <body id="page-top">
+        <!-- page wrapper -->
+        <div id="wrapper">
+
+            <%- include('includes/sidebar')%>
+                <!-- End of Sidebar -->
+
+                <%- include('contents/c_tranzaksiya')%>
+                    <!-- end of content wrapper -->
+        </div>
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <%- include('includes/logout.ejs')%>
+            <!-- End of Logout Modal -->
+
+            <!-- Bootstrap core JavaScript-->
+            <script src="vendor/jquery/jquery.min.js"></script>
+            <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+            <!-- Custom scripts for all pages-->
+            <script src="js/sb-admin-2.min.js"></script>
+    </body>
+
+</html>
