@@ -1,7 +1,8 @@
 const express = require('express')
 const app = express()
 
-const router = require('./router')
+const frontend = require('./router/front')
+const backend = require('./router/back')
 
 const PORT = 3004
 
@@ -10,7 +11,8 @@ app.set('views', 'views')
 app.set('view engine', 'ejs')
 
 //middleware
-app.use(router)
+app.use(frontend)
+app.use(backend)
 app.use((req, res) => {
   res.render('404.ejs')
 })
