@@ -1,9 +1,14 @@
 const router = require('express').Router()
 
-const connsection = require('../db/mysql')
+const connection = require('../db/mysql')
 
-router.get('/', (req, res) => {
-  res.send()
+router.get('/dt_employees', (req, res) => {
+  connection.query('select * from employees', (err, results) => {
+    if (err) {
+      console.log(err)
+    }
+    res.json(results)
+  })
 })
 
 module.exports = router
