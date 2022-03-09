@@ -11,9 +11,51 @@
 
                 <!-- Page Heading -->
                 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mb-0 text-gray-800">Ulanyjylar Sanawy</h1>
+                    <div class="card mb-0 py-0 border-left-success">
+                        <div class="card-body">
+                            <h1 class="h3 mb-0 text-gray-800">Ulanyjylary Dolandyrmak</h1>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Content Row -->
+                <div class="row">
+                    <!-- Area Chart -->
+                    <div class="col-xl-8 col-lg-7">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Area Chart görnüşinde</h6>
+                            </div>
+                            <div class="card-body">
+                                <div class="chart-area">
+                                    <canvas id="myAreaChart"></canvas>
+                                </div>
+                                <hr>
+                                <code>BMS ulgamyndaky ulanyjylaryň her aýdaky görkezijisi.</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doughnut Chart -->
+                    <div class="col-xl-4 col-lg-5">
+                        <div class="card shadow mb-4">
+                            <!-- Card Header - Dropdown -->
+                            <div class="card-header py-3">
+                                <h6 class="m-0 font-weight-bold text-primary">Doughnut Chart görnüşinde</h6>
+                            </div>
+                            <!-- Card Body -->
+                            <div class="card-body">
+                                <div class="chart-pie pt-4">
+                                    <canvas id="myPieChart"></canvas>
+                                </div>
+                                <hr>
+                                <code>Ähli Merkezler boýunça ulanyjylaryň platformadaky sanawy.</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Datatable -->
                 <div class="card shadow mb-4">
                     <div class="card-body">
                         <div class="table-responsive">
@@ -27,32 +69,6 @@
                                         <th scope="col">Doglan sene</th>
                                         <th scope="col">Passport seriýa</th>
                                     </tr>
-                                <tbody>
-                                    <tr>
-                                        <td>100000.00</td>
-                                        <td>9934-xxxx-xxxx-xxxx</td>
-                                        <td>Hushnudbek</td>
-                                        <td>Rahimow</td>
-                                        <td>29.02.2000</td>
-                                        <td>I-DZ xxxxxx</td>
-                                    </tr>
-                                    <tr>
-                                        <td>-</td>
-                                        <td>9934-xxxx-xxxx-xxxx</td>
-                                        <td>Aman</td>
-                                        <td>Amanow</td>
-                                        <td>01.01.2000</td>
-                                        <td>I-LB xxxxxx</td>
-                                    </tr>
-                                    <tr>
-                                        <td>999999.50</td>
-                                        <td>9934-1234-5678-9012</td>
-                                        <td>Aman</td>
-                                        <td>Amanow</td>
-                                        <td>02.02.2002</td>
-                                        <td>I-MR xxxxxx</td>
-                                    </tr>
-                                </tbody>
                                 </thead>
                             </table>
                         </div>
