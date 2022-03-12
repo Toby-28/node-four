@@ -36,7 +36,7 @@ router.post('/dt_employees', (req, res) => {
       if (err) {
         console.log(err)
       }
-      res.redirect('/')
+      res.redirect('/isgarler')
     }
   )
 })
