@@ -12,5 +12,8 @@ router.get('/habarlasmak', (req, res) => {
 router.get('/tranzaksiya', (req, res) => {
   res.render('tranzaksiya')
 })
+router.get('/login', (req, res) => {
+  res.render('login')
+})
 
 module.exports = router

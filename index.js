@@ -13,7 +13,7 @@ app.use(bodyParser.json())
 app.set('views', 'views')
 app.set('view engine', 'ejs')
 
-//middleware
+//middlewares
 app.use(frontend)
 app.use(backend)
 app.use((req, res) => {
