@@ -15,5 +15,11 @@ router.get('/tranzaksiya', (req, res) => {
 router.get('/login', (req, res) => {
   res.render('login')
 })
+router.get('/forgot-password', (req, res) => {
+  res.render('forgot-password')
+})
+router.get('/register', (req, res) => {
+  res.render('register')
+})
 
 module.exports = router
