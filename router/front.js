@@ -1,6 +1,6 @@
 const router = require('express').Router()
 
-router.get('/isgarler', (req, res) => {
+router.get('/', (req, res) => {
   res.render('isgarler')
 })
 router.get('/ulanyjylar', (req, res) => {
