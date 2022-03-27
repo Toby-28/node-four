@@ -1,0 +1,40 @@
+<%- include('includes/head') %>
+    <style>
+        .loginimg {
+            /* I took the width from your post and placed it in css */
+            width: 230px;
+            height: 150px;
+        }
+
+        /* This will style any <img> element in .parent div */
+        .loginimg img {
+            height: 100%;
+            width: 100%;
+        }
+    </style>
+    </head>
+
+    <body id="page-top">
+        <!-- page wrapper -->
+        <div id="wrapper">
+
+            <%- include('includes/sidebar')%>
+                <!-- End of Sidebar -->
+
+                <%- include('contents/c_products')%>
+                    <!-- end of content wrapper -->
+        </div>
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <%- include('modals/logout')%>
+            <!-- End of Logout Modal -->
+
+            <%- include('includes/scripts')%>
+                <!-- Overall site js scripts -->
+    </body>
+
+    </html>

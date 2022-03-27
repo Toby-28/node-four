@@ -1,0 +1,63 @@
+<!-- Content Wrapper -->
+<div id="content-wrapper" class="d-flex flex-column">
+    <!-- main content -->
+    <div id="content">
+
+        <%- include('../includes/topbar')%>
+            <!-- end of topbar -->
+
+            <!-- Begin page content -->
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                    <div class="card mb-0 py-0 border-left-danger">
+                        <div class="card-body">
+                            <h1 class="h3 mb-0 text-gray-800">Harytlar</h1>
+                        </div>
+                    </div>
+                    <a href="/prices" class="d-none d-sm-inline-block btn btn-sm btn-info shadow-sm"><i
+                            class="fas fa-plus fa-sm text-white-50"></i> Haryt goşmak</a>
+                </div>
+
+                <!-- Content Row -->
+                <div class="row">
+
+                    <% products.forEach(product=>{ %>
+                        <!-- Earnings (Monthly) Card Example -->
+                        <div class="col-xl-3 col-md-4 mb-4">
+                            <div class="card border-left-<%= product.colorCardBorder %> shadow h-100">
+                                <div class="card-body">
+                                    <div class=" no-gutters align-items-center">
+                                        <div class="d-sm-flex align-items-center justify-content-between mb-2">
+                                            <div class="col">
+                                                <div class="text-xs font-weight-bold text-primary text-uppercase">
+                                                    <%= product.name %>
+                                                </div>
+                                                <div class="h5 mb-0 font-weight-bold text-gray-800">
+                                                    <%= product.price %>TMT
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <a href="/detail"
+                                                    class="btn btn-secondary d-none d-sm-inline-block btn-sm">Giňişleýin</a>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <i class="fas fa-6x text-gray-300">
+                                                <img src="img/login.jpg" class="loginimg">
+                                            </i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <% }) %>
+                </div>
+            </div>
+            <!-- ./container fluid -->
+    </div>
+    <!-- end of main content -->
+
+    <%- include('../includes/footer.ejs')%>
+        <!-- End of Footer -->
+</div>

@@ -3,19 +3,25 @@
     aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Işgäri saýlaň</h5>
-                <button class="close" type="button" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body"></div>
-            <div class="modal-footer">
-                <button class="btn btn-secondary" type="button" data-dismiss="modal">
-                    Yza
-                </button>
-                <a class="btn btn-primary" href="/login">Poz</a>
-            </div>
+            <form action="/remove-employee" method="post">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Işgäriň ID-syny giriziň</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <input type="text" name="id" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">
+                        Yza
+                    </button>
+                    <button class="btn btn-primary" type="submit">Poz</button>
+                </div>
+            </form>
         </div>
     </div>
 </div>

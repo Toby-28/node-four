@@ -6,11 +6,12 @@ $(document).ready(function () {
       url: '/dt_employees',
     },
     columns: [
+      { data: 'id' },
       { data: 'name' },
       { data: 'surname' },
       { data: 'birth_date' },
-      { data: 'hired_date' },
-      { data: 'job' },
+      { data: 'job_name' },
+      { data: 'work_time' },
       { data: 'salary' },
     ],
   })

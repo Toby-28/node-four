@@ -15,33 +15,25 @@
                         <div class="form-group row">
                             <div class="col-sm-6 mb-3 mb-sm-0">
                                 <input type="text" class="form-control form-control-user" id="name"
-                                    placeholder="First Name" name="name">
+                                    placeholder="First Name" name="name" required>
                             </div>
-                            <div class="col-sm-6">
-                                <input type="text" class="form-control form-control-user" id="surname"
-                                    placeholder="Last Name" name="surname">
-                            </div>
-                        </div>
-                        <div class="form-group row">
                             <div class="col-sm-6 mb-3 mb-sm-0">
                                 <input type="date" class="form-control form-control-user" id="birthDate"
-                                    placeholder="Doglan senesi" name="birthDate">
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="date" class="form-control form-control-user" id="hiredDate"
-                                    placeholder="Işe alnan senesi senesi" name="hiredDate"
-                                    alt="Işe alnan senesi senesi">
+                                    placeholder="Doglan senesi" name="birthDate" required>
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <div class="col-sm-6 mb-3 mb-sm-0">
-                                <input type="text" class="form-control form-control-user" id="job" placeholder="Hünäri"
-                                    name="job">
-                            </div>
-                            <div class="col-sm-6">
-                                <input type="number" step="0.0001" class="form-control form-control-user" id="salary"
-                                    placeholder="Aýlygy" name="salary">
-                            </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-user" id="surname"
+                                placeholder="Last Name" name="surname" required>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control form-select" name="job_id" aria-label="Hünär saýlaň">
+                                <% jobs.forEach(job=>{ %>
+                                    <option value="<%= job.id %>">
+                                        <%= job.job_name %>
+                                    </option>
+                                    <% }) %>
+                            </select required>
                         </div>
                         <button class="btn btn-success btn-user btn-block">
                             Registrasiýa etmek
