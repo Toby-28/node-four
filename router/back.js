@@ -49,7 +49,7 @@ router.post('/dt_employees', (req, res) => {
           if (err) {
             console.log(err)
           }
-          res.redirect('/')
+          res.redirect('/main')
         }
       )
     })
@@ -62,7 +62,7 @@ router.post('/remove-employee', (req, res) => {
   pool
     .query(`delete from employees where id='${id}'`)
     .then((message) => {
-      res.redirect('/')
+      res.redirect('/main')
     })
     .catch((err) => {
       console.log(err)

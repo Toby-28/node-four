@@ -37,14 +37,14 @@
                     <div class="text-center">
                       <h1 class="h4 text-gray-900 mb-4">Hoş geldiňiz!</h1>
                     </div>
-                    <form class="user" method="post">
+                    <form class="user" action="/main">
                       <div class="form-group">
                         <input type="email" class="form-control form-control-user" id="exampleInputEmail"
-                          aria-describedby="emailHelp" placeholder="Email adresiňizi ýazyň...">
+                          aria-describedby="emailHelp" placeholder="Email adresiňizi ýazyň..." required>
                       </div>
                       <div class="form-group">
                         <input type="password" class="form-control form-control-user" id="exampleInputPassword"
-                          placeholder="Gizlin söz">
+                          placeholder="Gizlin söz" required>
                       </div>
                       <div class="form-group">
                         <div class="custom-control custom-checkbox small">
@@ -52,17 +52,10 @@
                           <label class="custom-control-label" for="customCheck">Ýatda saklamak</label>
                         </div>
                       </div>
-                      <a href="/" class="btn btn-primary btn-user btn-block">
+                      <button class="btn btn-primary btn-user btn-block" type="submit">
                         Ulgama gir
-                      </a>
+                      </button>
                     </form>
-                    <hr>
-                    <div class="text-center">
-                      <a class="small" href="/forgot-password">Paroly unutdyňyzmy?</a>
-                    </div>
-                    <div class="text-center">
-                      <a class="small" href="/register">Täze hasap açmak!</a>
-                    </div>
                   </div>
                 </div>
               </div>

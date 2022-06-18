@@ -2,6 +2,9 @@ const router = require('express').Router()
 const connection = require('../db/postgreSQL')
 
 router.get('/', (req, res) => {
+  res.render('login')
+})
+router.get('/main', (req, res) => {
   connection.query('select * from jobs', (err, results) => {
     if (err) {
       console.log(err)
@@ -48,9 +51,6 @@ router.get('/prices', (req, res) => {
     .catch((err) => {
       console.log(err)
     })
-})
-router.get('/login', (req, res) => {
-  res.render('login')
 })
 
 module.exports = router
